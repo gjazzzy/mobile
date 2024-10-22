@@ -188,7 +188,7 @@
 main{
    position: relative;
    border-radius: 20px;
-   padding: 20px 20px;
+   padding: 20px 0px;
    margin-bottom: 20px;
    width: 100%;
    background: #ffff;
@@ -198,11 +198,10 @@ main{
    &__items{
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      min-width: 430px;
-      width: 100%;
+      justify-content: center;
+      width: fit-content;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: 10px;
       z-index: 5;
       
    }
@@ -403,6 +402,10 @@ main{
 }
 
 @media screen and (max-width:1250px) {
+
+   .desctop{
+      padding: 25px 5px;
+   }
    .header{
       &__logo,.header__btn-login,.header__btn-reg{
          display: none;
@@ -440,15 +443,13 @@ main{
 
       &__sidebar-items{
          width: 100%;
+
       }
             
       &__sidebar-img{
          width: 120px;
          height: 120px;
       }
-   }
-   .mian{
-      padding: 0;
    }
 
    .left{
@@ -477,23 +478,82 @@ main{
    }
 }
 
-@media screen and (max-width:675px) {
+
+@media screen and (max-width:682px) {
    .desctop{
       padding: 25px 5px;
-   }
-   main{
-      padding: 0;
    }
    .main{
       &__items{
          display: flex;
          align-items: center;
-         justify-content: space-around;
+         justify-content:center;
+         gap: 5px;
       }
 
+      &__item{
+         max-width: 175px;
+         min-width:none ;
+         width: 100%;   
+      }
+   
+      &__item-img{
+         max-width:175px;
+         min-width: none;
+      }
+   
+      &__item-name{
+         max-width: 170px;
+         min-width: none;
+      }
+   }
+}
+
+
+@media screen and (max-width:383px) {
+      .main{   
+         &__item{
+            width: 100%;
+            max-width: 159px;
+            min-width:none ;
+            width: 100%;   
+         }
+      
+         &__item-img{
+            max-width: 150px;
+            min-width:none ;
+         }
+      
+         &__item-name{
+            max-width: 150px;
+            min-width: none;
+         }
+      }
+   
    }
 
-}
+   @media screen and (max-width:349px) {
+      .main{   
+         &__item{
+            width: 100%;
+            height: 100%;
+            max-height: 350px;
+            max-width: 340px;
+            min-width:none ;
+         }
+      
+         &__item-img{
+            width: 100%;
+            max-width: 340px;
+            min-width:none ;
+         }
+      
+         &__item-name{
+              
+            max-width: 340px;
+            min-width: none;
+         }
+      }
+   
+   }
 
-@media screen and (max-width:440px) {
-}
