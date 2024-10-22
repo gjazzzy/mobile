@@ -135,7 +135,7 @@ $(document).ready(function () {
       } else {
          $("#button-image").attr("src", 'images/icons/icon-shopping-cart.svg');
          $('.right').hide();
-         $('html').css("overflow-y", "scroll");
+         // $('html').css("overflow-y", "scroll");
       }
    });
 });

@@ -410,6 +410,7 @@ main{
       &__search--wrapper{
          width: 100%;
          max-width: 1200px;
+         min-width: none;
       }
       &__btn-cart{
          display: flex;
